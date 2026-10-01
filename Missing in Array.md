@@ -1,6 +1,6 @@
 ## 01. Missing in Array
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1)
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1?utm_source=chatgpt.com)
 
 ### Problem Description
 
@@ -21,9 +21,31 @@ The problem can be found at the following link: [Question Link](https://www.geek
 - **Expected Time Complexity:** O(n)
 - **Expected Auxiliary Space Complexity:** O(1)
 
-### Accepted Solutions (2)
+### Accepted Solutions (3)
 
 #### Solution 1 (Java)
+
+- **Submitted:** 2026-10-01 19:01:40
+- **Status:** Correct
+- **Marks:** 0
+
+```java
+class Solution {
+    int missingNum(int arr[]) {
+                int n=arr.length+1;
+              long  sum=0;
+                long expectedsum=0;
+                expectedsum=(long)n*(n+1)/2;
+                for(int i=0;i<arr.length;i++)
+                {
+                    sum+=arr[i];
+                }
+                return (int)(expectedsum-sum);
+            }
+        }
+```
+
+#### Solution 2 (Java)
 
 - **Submitted:** 2025-07-12 13:23:55
 - **Status:** Correct
@@ -48,7 +70,7 @@ class Solution {
         }
 ```
 
-#### Solution 2 (Java)
+#### Solution 3 (Java)
 
 - **Submitted:** 2025-07-09 15:25:29
 - **Status:** Correct
@@ -65,4 +87,4 @@ class Solution:
         # code here
 ```
 
-*Generated on: 1/10/2026, 11:06:53 am*
+*Generated on: 1/10/2026, 7:02:24 pm*
