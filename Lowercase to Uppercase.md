@@ -1,0 +1,42 @@
+## 01. Lowercase to Uppercase
+
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/lower-case-to-upper-case3410/1)
+
+### Problem Description
+
+**Task:** Given a string s containing only lowercase English letters, convert all its characters to uppercase and return the resulting string.Examples:Input: s = "geeks"
+
+#### Examples
+
+##### Example 1
+
+- **Output:**
+```text
+GEEKSFORGEEKSExplanation: Each lowercase character in the string is converted to uppercase.
+```
+
+### Time and Auxiliary Space Complexity
+
+- **Expected Time Complexity:** O(n)
+- **Expected Auxiliary Space Complexity:** O(1)
+
+### Accepted Solutions (1)
+
+#### Solution 1 (Java)
+
+- **Submitted:** 2026-11-25 22:23:59
+- **Status:** Correct
+- **Marks:** 1
+
+```java
+class Solution {
+    public String toUpper(String s) {
+        String r=s.toUpperCase();
+        return r;
+        // code here
+        
+    }
+}
+```
+
+*Generated on: 25/11/2026, 10:24:13 pm*
